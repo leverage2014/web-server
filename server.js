@@ -8,7 +8,7 @@ var middleware = require('./middleware');
 // 	res.send('Hello, express');
 // });
 
-var PORT = 3000; 
+var PORT = 3000 || process.env.PORT; 
 
 //app.use(middleware.requireAuthentication);   // middleware on the top
 
